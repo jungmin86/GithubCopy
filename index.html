@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang = 'ko'>
+    <head>
+        <meta charset = 'utf-8'>
+        <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = 'width=device-width, initial-scale = 1.0' >
+        <title>Woo-hub</title>
+
+        <!--파비콘-->
+        <link rel="icon" href="./favicon.png">
+
+        <!--구글 폰트-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+
+        <!--부트-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="./main.css">
+
+        <script>
+            // Initialize Google Map.
+            function initMap() {
+              const myLatLng = {
+                lat: 37.782293,
+                lng: -122.391240
+              }
+              const map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                scrollwheel: false,
+                zoom: 18
+              })
+              const marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'GitHub'
+              })
+            }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap" async defer></script>
+        
+    </head>
+    <body>
+        
+        <!--HERO-->
+        <section class = 'hero'>
+            <img class="globe" src="./images/hero-globe.jpg" alt="globe">
+            <img class="glow" src="./images/hero-glow.svg" alt="glow">
+            
+            <!--HEADER-->
+            <header>
+                <div class="container d-flex align-items-center py-3">
+                    <a class= 'logo me-2' href="#">
+                        <img src="./images/header-logo.svg" alt="GitHub Logo">
+                    </a>
+                    <ul class="nav flex-grow-1">
+                        <li class = 'nav-item'>
+                            <a href="#" class="nav-link text-light">Woo</a>
+                        </li>
+                        <li class = 'nav-item'>
+                            <a href="#" class="nav-link text-light">Young</a>
+                        </li>
+                        <li class = 'nav-item'>
+                            <a href="#" class="nav-link text-light">Chang</a>
+                        </li>
+                        <li class = 'nav-item'>
+                            <a href="#" class="nav-link text-light">Box</a>
+                        </li>
+                    </ul>
+                    <div class="forms d-flex">
+                        <input type="text" class = 'form-control me-2' placeholder="Search Woo-hub">
+                        <button class = "btn btn-link text-light flex-shrink-0 me-2 text-decoration-none">Sign in</button>
+                        <button class = "btn btn-outline-light flex-shrink-0">Sign up</button>
+                    </div>
+                    <button class="btn ms-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+                        <img src="./images/menu.svg" alt="Menu Icon">
+                    </button>
+                    <div class="offcanvas offcanvas-end" id="offcanvas">
+                        <div class="offcanvas-header">
+                            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item">
+                                    <a href="#">Woo</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">Young</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">Chang</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">Box</a>
+                                </li>
+                            </ul>
+                            <input type="text" class="form-control mb-2" placeholder="Search Woohub">
+                            <div class="d-grid mb-2">
+                                <button class="btn btn-outline-primary">Sign in</button>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-outline-primary">Sign up</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class = 'container'>
+                <div class="row">
+                    <div class="col-lg-7 col-12">
+                        <div class="headline">
+                            <h1 class="text-white">선장님은 어릴 적 꿈이 무엇이었어요?</h1>
+                            <p class="text-white-50">Millions of developers and companies build, ship, and maintain their software on GitHub—the largest and most advanced development platform in the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-12">
+                        <form>
+                            <input type="text" class="form-control form-control-lg mb-3" placeholder="전 있잖아요.">
+                            <input type="password" class="form-control form-control-lg mb-3" placeholder="프론트엔드가 되고 싶었어요.">
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-lg">Sigh up for Woo-hub</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <img class="curve" src="./images/curve.svg" alt="curve">
+
+        </section>
+
+        <!--YOUTUBE-->
+        <section class="youtube">
+            <div class="container">
+                <img class="astronaut" src="./images/hero-astronaut.svg" alt="astronaut">
+                <div class="ratio ratio-16x9">
+                    <iframe width="950" height="534" src="https://www.youtube.com/embed/_nnAt98vHRE" title="[명장면] 다큐 3일 선장의 꿈(왜 또 아픈 상처에 소금을 뿌리십니까)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!--CARD-->
+        <section class="features border-top border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <div class="card">
+                            <img src="./woo.png" alt="WOO1" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><strong>Woo</strong></h5>
+                                <p class="card-text">아무나 우영창이 될 수 있을 것 같니?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="card">
+                            <img src="./woo2.png" alt="woo2" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><strong>분분한 낙화</strong></h5>
+                                <p class="card-text">봄 한 철 격정을 인내한 나의 사랑은 지고있다</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="card">
+                            <img src="./woo3.png" alt="woo3" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><strong>한 잔은</strong></h5>
+                                <p class="card-text">떠나간 너를 위하여</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="card">
+                            <img src="./woo4.png" alt="woo4" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><strong>한 잔은</strong></h5>
+                                <p class="card-text">너와 나의 영원했던 사랑을 위하여</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--MAP-->
+        <section class="map">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <h1>Where is Woohub</h1>
+                        <p>어디일까요~</p>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div id="map" class="shadow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <img class="curve" src="./images/curve.svg" alt="">
+            <div class="container">
+                <img class="illustration" src="./images/footer-illustration.webp" alt="illustration">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <img class="logo" src="./images/footer-logo.svg" alt="Logo">
+                    </div>
+                    <div class="col-lg-2 col-md-3 ">
+                        <h5>Product</h5>
+                        <ul class="list-unstyled">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Customer stories</a></li>
+                        <li><a href="#">The ReadME Project</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                        <h5>Platform</h5>
+                        <ul class="list-unstyled">
+                        <li><a href="#">Developer API</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Atom</a></li>
+                        <li><a href="#">Electron</a></li>
+                        <li><a href="#">GitHub Desktop</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                        <h5>Support</h5>
+                        <ul class="list-unstyled">
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Community Forum</a></li>
+                        <li><a href="#">Professional Services</a></li>
+                        <li><a href="#">Learning Lab</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Contact GitHub</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                        <h5>Company</h5>
+                        <ul class="list-unstyled">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">DI&B</a></li>
+                        <li><a href="#">Social Impact</a></li>
+                        <li><a href="#">Shop</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div >
+                <ul class="site-links list-unstyled">
+                    <li>© 2021 GitHub, Inc.</li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">What is Git?</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
