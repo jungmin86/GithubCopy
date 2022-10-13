@@ -128,9 +128,6 @@ section.features .card img {
     }
 }
 
-section.map {
-
-}
 
 section.map .container {
     padding-top: 100px;
@@ -166,9 +163,7 @@ footer .curve {
     left: 0;
 
 }
-footer .container {
-    
-}
+
 footer img.illustration {
     width: 100%;
     margin-top: -33%;
